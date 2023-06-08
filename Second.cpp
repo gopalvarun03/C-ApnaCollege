@@ -16,7 +16,7 @@ int main()
     std::cout<<"Floating point defaultly prints 6 significant digits same for all ex:double "<<b<<" "<<m<<" "<<n<<std::endl;
     std::cout<<"To set precision: "<<std::setprecision(15)<<std::endl;
      std::cout<<"After setting precision: "<<b<<" "<<m<<" "<<n<<std::endl;
-     std::cout<<"The current precision is : "<<std::cout.precision();
+     std::cout<<"The current precision is : "<<std::cout.precision()<<std::endl;
      std::cout<<"The numerical limits are : "<<std::numeric_limits<float>::digits10;
 
     return 0;
