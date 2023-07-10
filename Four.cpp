@@ -31,3 +31,20 @@ int main()
     return 0;
 }
 int g=200;
+/*
+#include<iostream>
+#define Area(l,b)(l*b) // M-2 #define Area(l,b) l*b
+using namespace std;
+int main()
+{
+    int l=10,b=5;
+    int c=Area(3,4); //Output is 12
+    cout<<c<<endl;
+    auto test=1.2;
+    auto test1=1.2f;
+    auto j="Hello";
+    cout<<sizeof(test)<<endl<<sizeof(test1)<<endl<<sizeof(j);
+    
+    return 0;
+}
+*/
