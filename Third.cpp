@@ -28,5 +28,6 @@ int main()
     cout<<endl<<(x&y)<<endl<<(x|y)<<endl<<(x^y)<<endl<<~x;
     // x<<n x*2^n
     // x>>n x/2^n and x<<=n is equivalent to x=x<<n
+    
     return 0;
 }
