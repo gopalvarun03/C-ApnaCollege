@@ -15,8 +15,16 @@ int main()
     {
         for(int j=0;j<n;j++)
         {
-            *matrix[i][j]=i+j;
+            (*matrix)[i][j]=i+j;
         }
+    }
+    for(int i=0;i<m;i++)
+    {
+        for(int j=0;j<n;j++)
+        {
+            cout<<(*matrix)[i][j];
+        }
+        cout<<endl;
     }
 
     return 0;
