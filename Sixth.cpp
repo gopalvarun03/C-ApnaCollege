@@ -10,8 +10,7 @@ int main()
     cin>>n;
     cout<<"Varun's method: "<<m1(n)<<endl;
     cout<<"Recursion method(better): "<<m2(n)<<endl;
-    cout<<"DP: "<<endl;
-    m3(n);
+    cout<<"DP: "<<m3(n)<<endl;
     return 0;
 }
 int m1(int n)
@@ -46,5 +45,12 @@ int m2(int n)
 }
 int m3(int n)
 {
-    return 0;
+    int res[n + 1];
+    res[0] = 1;
+    res[1] = 1;
+    res[2] = 2;
+    for (int i = 3; i <= n; i++)
+        res[i] = res[i - 1] + res[i - 2] + res[i - 3];
+ 
+    return res[n];
 }
