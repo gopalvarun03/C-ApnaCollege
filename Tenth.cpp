@@ -28,12 +28,27 @@ class Employee {
                  << ", Experience: " << years;
         }
 };
+class Player{
+    public:
+        static int count;
+        Player(){count++;}
+        ~Player(){count--;}
+        static int getCount(){return count;}
+};
 
+int Player :: count = 0;
 int main()
 {
     Employee emp;
     
     emp.setId("GFG123").setName("John").setYears(4).printDetails();
+    cout<<endl;
+    Player p1;
+    cout << Player :: count << " ";
+    Player p2;
+    cout << Player :: count << " ";
+    cout << Player :: getCount() << " ";
+
     
     return 0;
 }
